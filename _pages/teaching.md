@@ -2,95 +2,174 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: Course materials, schedules, and resources for classes taught.
+description: List of classes taught by semester.
 nav: true
 nav_order: 2
 calendar: true
 ---
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Lato:ital,wght@0,400;0,600;1,400&display=swap');
+
+  /* ── Shared design tokens ───────────────────────────── */
+  :root {
+    --primary:       #2e4a7a;   /* deep steel blue — main headings */
+    --primary-light: #3a5c96;   /* slightly lighter blue */
+    --accent-soft:   #c8b8f0;   /* soft purple — left accent bar (undergrad) */
+    --accent-warm:   #f0c8b8;   /* warm peach — left accent bar (PhD) */
+    --accent-wip:    #b509ac;   /* magenta — work-in-progress box (publications) */
+    --text-main:     #333;
+    --text-muted:    #666;
+    --border-color:  #2e4a7a;
+  }
+
   /* ── Section headers (h2) ───────────────────────────── */
-  .teaching-section {
-    font-size: 1.6rem;
+  .page-section-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.55rem;
     font-weight: 700;
-    color: #4a4a8a;           /* deep indigo — change this hex to any color */
-    border-bottom: 2px solid #4a4a8a;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
     padding-bottom: 6px;
-    margin-top: 2rem;
-    font-family: 'Roboto', sans-serif;  /* serif font for section titles */
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.01em;
   }
-  /* ── Term headers (e.g. Fall 2024) ─────────────────── */
+
+  /* ── Term / sub-group headers ───────────────────────── */
   .term-header {
-    font-size: 1.05rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.88rem;
     font-weight: 600;
-    color: #888;              /* muted gray */
+    color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.08em;  /* spaced out letters */
+    letter-spacing: 0.1em;
     margin-top: 1.2rem;
-    margin-bottom: 0.3rem;
-    font-family: 'Arial', sans-serif;
+    margin-bottom: 0.4rem;
   }
-  /* ── Course list items ──────────────────────────────── */
+
+  /* ── Course list ────────────────────────────────────── */
   .course-list {
     list-style: none;
     padding-left: 0;
+    margin-top: 0.2rem;
   }
   .course-list li {
-    font-size: 0.97rem;
-    font-family: 'Courier New', monospace;  /* monospace for a code-lab feel */
-    color: #333;
-    padding: 4px 0;
-    border-left: 3px solid #c8b8f0;   /* soft purple left accent bar */
-    padding-left: 10px;
-    margin-bottom: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    border-left: 3px solid var(--accent-soft);
+    padding: 5px 0 5px 12px;
+    margin-bottom: 5px;
   }
-  /* ── PhD section course items — slightly different style ── */
   .course-list.phd li {
-    border-left-color: #f0c8b8;       /* warm peach accent for PhD courses */
+    border-left-color: var(--accent-warm);
     color: #555;
     font-style: italic;
   }
 </style>
- 
+
 ---
- 
-<h2 class="teaching-section">Teachings at Champlain College</h2>
- 
+
+<h2 class="page-section-heading">Teachings at Champlain College</h2>
+
+<p class="term-header">Fall 2026</p>
+<ul class="course-list">
+  <li>CSI-140 Introduction to Programming</li>
+  <li>CSI-480 Topics in AI</li>
+  <li>DAT-330 Data Mining</li>
+</ul>
+
+<p class="term-header">Spring 2026</p>
+<ul class="course-list">
+  <li>CSI-380 Emerging Languages</li>
+  <li>DAT-210 Data Analytics</li>
+  <li>DAT-410 Machine Learning</li>
+</ul>
+
+<p class="term-header">Fall 2025</p>
+<ul class="course-list">
+  <li>CSI-140 Introduction to Programming</li>
+  <li>CSI-480 Topics in AI</li>
+  <li>DAT-230 Data Visualization</li>
+  <li>DAT-330 Data Mining</li>
+</ul>
+
+<p class="term-header">Summer 2025</p>
+<ul class="course-list">
+  <li>CSI-160 Python Programming</li>
+</ul>
+
+<p class="term-header">Spring 2025</p>
+<ul class="course-list">
+  <li>CSI-300 Database Management Systems</li>
+  <li>DAT-210 Data Analytics</li>
+  <li>DAT-410 Machine Learning</li>
+</ul>
+
 <p class="term-header">Fall 2024</p>
 <ul class="course-list">
-  <li>Course Name 1 (CSC XXX)</li>
-  <li>Course Name 2 (CSC XXX)</li>
+  <li>CSI-160 Python Programming</li>
+  <li>CSI-260 Advanced Python</li>
+  <li>DAT-310 Big Data Analytics</li>
+  <li>DAT-330 Data Mining</li>
 </ul>
+
+<p class="term-header">Summer 2024</p>
+<ul class="course-list">
+  <li>CSI-160 Python Programming</li>
+</ul>
+
 <p class="term-header">Spring 2024</p>
 <ul class="course-list">
-  <li>Course Name 1 (CSC XXX)</li>
-  <li>Course Name 2 (CSC XXX)</li>
+  <li>CSI-140 Introduction to Programming</li>
+  <li>DAT-210 Data Analytics</li>
+  <li>DAT-230 Data Visualization</li>
+  <li>DAT-410 Machine Learning</li>
 </ul>
+
 <p class="term-header">Fall 2023</p>
 <ul class="course-list">
-  <li>Course Name 1 (CSC XXX)</li>
-  <li>Course Name 2 (CSC XXX)</li>
+  <li>CSI-140 Introduction to Programming</li>
+  <li>DAT-310 Advanced Data Analytics</li>
+  <li>DAT-330 Data Mining</li>
 </ul>
----
- 
-<h2 class="teaching-section">Teaching and Assisted Courses as a PhD Student</h2>
- 
-<p class="term-header">Fall 2022 — University Name</p>
+
+<h2 class="page-section-heading">Instructor of Record as a PhD Student at Wichita State University</h2>
+
+<p class="term-header">Spring 2023</p>
 <ul class="course-list phd">
-  <li>Course Name 1 (CS XXX) — Instructor of Record</li>
-  <li>Course Name 2 (CS XXX) — Teaching Assistant</li>
+  <li>CS-540 Operating Systems</li>
+  <li>CS-211 Introduction to Programming</li>
+  <li>CS-211L Problem Solving & Programming Lab </li>
 </ul>
-<p class="term-header">Spring 2022 — University Name</p>
+
+<p class="term-header">Fall 2022</p>
 <ul class="course-list phd">
-  <li>Course Name 1 (CS XXX) — Teaching Assistant</li>
-  <li>Course Name 2 (CS XXX) — Teaching Assistant</li>
+  <li>CS-211 Introduction to Programming</li>
+  <li>CS-211L Problem Solving & Programming Lab </li>
 </ul>
-<p class="term-header">Fall 2021 — University Name</p>
+
+<p class="term-header">Summer 2022</p>
 <ul class="course-list phd">
-  <li>Course Name 1 (CS XXX) — Teaching Assistant</li>
+    <li>CS-211 Introduction to Programming</li>
+  <li>CS-211L Problem Solving & Programming Lab </li>
 </ul>
----
- 
-<h2 class="teaching-section">Sample Courses</h2>
- 
-{% include courses.liquid %}
+
+<p class="term-header">Spring 2022</p>
+<ul class="course-list phd">
+  <li>CS-211 Introduction to Programming</li>
+  <li>CS-211L Problem Solving & Programming Lab </li>
+</ul>
+
+<p class="term-header">Fall 2021</p>
+<ul class="course-list phd">
+  <li>CS-211 Introduction to Programming</li>
+  <li>CS-211L Problem Solving & Programming Lab </li>
+</ul>
+
+
+
+<!-- <h2 class="page-section-heading">Sample Courses</h2> -->
+
+<!--  {% include courses.liquid %} -->
